@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Colors */
+  --color-brand: #0A0A0A;
+  --color-primary: #0058F7;
+  --color-white-primary: #ffffff;
+  --color-white-secondary: #f4f4f4;
+  --color-black-primary: #0a0a0a;
+  --color-black-secondary: #1a1a1c;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .section {
+    @apply sm:px-0 px-5 py-10 sm:py-17.5;
+  }
+
+  .heading {
+    @apply text-4xl font-semibold max-w-200 text-center mb-6 sm:mb-8;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .primary-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white-primary);
+  }
+  .primary-btn:hover {
+    box-shadow: 0 4px 6px rgba(0, 88, 247, 0.4);
+  }
+}
