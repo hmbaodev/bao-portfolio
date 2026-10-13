@@ -1,3 +1,4 @@
+import CallToAction from "./sections/call-to-action";
 import Hero from "./sections/hero";
 import Service from "./sections/service";
 import Work from "./sections/work";
@@ -8,6 +9,7 @@ export default function App() {
       <Hero />
       <Work />
       <Service />
+      <CallToAction />
     </div>
   );
 }

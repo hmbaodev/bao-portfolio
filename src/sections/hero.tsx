@@ -23,10 +23,10 @@ const Hero = () => {
           tracked correctly and tested before launch, on the platform your team
           already uses.
         </p>
-        <button className="btn primary-btn">
+        <a href="#work" className="btn primary-btn">
           <span className="mr-2">Check My Work</span>
           <RiArrowDownLine />
-        </button>
+        </a>
       </div>
     </section>
   );

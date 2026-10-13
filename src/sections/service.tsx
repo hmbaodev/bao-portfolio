@@ -1,5 +1,5 @@
 import { SERVICES } from "@/constants";
-import { RiArrowRightLine } from "@remixicon/react";
+import { RiArrowDownLine } from "@remixicon/react";
 
 const Service = () => {
   return (
@@ -26,16 +26,18 @@ const Service = () => {
                     </span>
                   </div>
                 </div>
-                <p className="font-heading font-medium text-xl">{service.title}</p>
+                <p className="font-heading font-medium text-xl">
+                  {service.title}
+                </p>
                 <p className="text-[#A1A1AA] text-sm">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
-        <button className="btn primary-btn">
+        <a href="#cta" className="btn primary-btn">
           <span className="mr-2">Work With Me</span>
-          <RiArrowRightLine />
-        </button>
+          <RiArrowDownLine />
+        </a>
       </div>
     </section>
   );
